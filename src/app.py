@@ -10,6 +10,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import RedirectResponse
 import os
 from pathlib import Path
+from typing import List
 
 app = FastAPI(title="Mergington High School API",
               description="API for viewing and signing up for extracurricular activities")
@@ -81,7 +82,7 @@ def is_prime(n: int) -> bool:
     return True
 
 
-def get_first_n_primes(n: int) -> list:
+def get_first_n_primes(n: int) -> List[int]:
     """Get the first n prime numbers"""
     primes = []
     num = 2

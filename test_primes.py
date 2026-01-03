@@ -13,21 +13,21 @@ from app import is_prime, get_first_n_primes
 def test_is_prime():
     """Test the is_prime function"""
     # Test known primes
-    assert is_prime(2) == True
-    assert is_prime(3) == True
-    assert is_prime(5) == True
-    assert is_prime(7) == True
-    assert is_prime(11) == True
-    assert is_prime(13) == True
+    assert is_prime(2)
+    assert is_prime(3)
+    assert is_prime(5)
+    assert is_prime(7)
+    assert is_prime(11)
+    assert is_prime(13)
     
     # Test non-primes
-    assert is_prime(0) == False
-    assert is_prime(1) == False
-    assert is_prime(4) == False
-    assert is_prime(6) == False
-    assert is_prime(8) == False
-    assert is_prime(9) == False
-    assert is_prime(10) == False
+    assert not is_prime(0)
+    assert not is_prime(1)
+    assert not is_prime(4)
+    assert not is_prime(6)
+    assert not is_prime(8)
+    assert not is_prime(9)
+    assert not is_prime(10)
 
 
 def test_get_first_n_primes():
